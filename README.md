@@ -17,8 +17,6 @@ Eğitim Serisinde Yer Verilen Başlıca Teknolojiler:
 - SignalR
 - Json Web Token (JWT)
 - Swagger
-- DTO
-- Enum
 - Fluent Validation
 - ViewModel & Model
 - Onion Architecture
