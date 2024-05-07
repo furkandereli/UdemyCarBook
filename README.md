@@ -18,7 +18,6 @@ Eğitim Serisinde Yer Verilen Başlıca Teknolojiler:
 - Json Web Token (JWT)
 - Swagger
 - Fluent Validation
-- ViewModel & Model
 - Onion Architecture
 - MsSQL
 - HTML, CSS, Bootstrap
