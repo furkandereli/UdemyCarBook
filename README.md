@@ -2,7 +2,7 @@
 
 <strong>Murat Yücedağ</strong> hocamın Udemyde yayınladığı Asp.Net Core Api 8.0 Onion Architecture ile BookCar Projesi isimli kursunun son dersleri dahil bitmiş halidir.<br>
 
-Proje uzun zamandır kendimi geliştirmek için takip ettiğim bir projeydi. Yazdığım ilk onion architecture mimarisine sahip projedir.
+Uzun zamandır kendimi geliştirmek için takip ettiğim bir projeydi. Yazdığım ilk onion architecture mimarisine sahip projedir.
 İlk defa JWT kullanarak sign in ve sign up işlemlerini gerçekleştirdiğim bir proje oldu.<br>
 
 Projede müşteri ve admin olmak üzere 2 yüzden oluşuyor.<br>
