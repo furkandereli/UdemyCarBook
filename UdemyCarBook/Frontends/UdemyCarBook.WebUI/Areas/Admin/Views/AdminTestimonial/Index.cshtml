@@ -1,0 +1,59 @@
+﻿@model List<ResultTestimonialDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Ana Sayfa Referanslar Listesi Alanı</h4>
+                        <p class="card-subtitle mb-4">
+                            Müşterilerimizin bizim hakkımızda söylemiş oldukları ifadeleri yorum olarak ekleyip, düzenleyebildiğimiz sayfadır.
+                        </p>
+                        <div class="table-responsive">
+                            @if (Model.Count > 0)
+                            {
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th>Image URL</th>
+                                            <th>Ad Soyad</th>
+                                            <th>Başlık</th>
+                                            <th>Yorum</th>
+                                            <th>Sil</th>
+                                            <th>Güncelle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td style="vertical-align:middle"><img src="@item.ImageUrl" width="50" height="50" style="border-radius:50%"/></td>
+                                                <td style="vertical-align:middle">@item.Name</td>
+                                                <td style="vertical-align:middle">@item.Title</td>
+                                                <td style="vertical-align:middle">@item.Comment</td>
+                                                <td style="vertical-align:middle"><a href="/Admin/AdminTestimonial/RemoveTestimonial/@item.TestimonialId" class="btn btn-rounded btn-outline-danger">Sil</a></td>
+                                                <td style="vertical-align:middle"><a href="/Admin/AdminTestimonial/UpdateTestimonial/@item.TestimonialId" class="btn btn-rounded btn-outline-success">Güncelle</a></td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            }
+                            else
+                            {
+                                <div class="alert alert-info">
+                                    <p class="mb-0">Henüz hiçbir referans eklenmemiş!</p>
+                                </div>
+                            }
+                            <a href="/Admin/AdminTestimonial/CreateTestimonial" class="btn btn-rounded btn-outline-primary">Yeni Referans Girişi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

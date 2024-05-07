@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "UdemyCarBook.Dto/1.0.0": {
+        "dependencies": {
+          "UdemyCarBook.Domain": "1.0.0"
+        },
+        "runtime": {
+          "UdemyCarBook.Dto.dll": {}
+        }
+      },
+      "UdemyCarBook.Domain/1.0.0": {
+        "runtime": {
+          "UdemyCarBook.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UdemyCarBook.Dto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UdemyCarBook.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

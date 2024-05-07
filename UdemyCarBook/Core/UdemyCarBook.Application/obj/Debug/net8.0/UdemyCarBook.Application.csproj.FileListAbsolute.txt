@@ -1,0 +1,15 @@
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\bin\Debug\net8.0\UdemyCarBook.Application.deps.json
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\bin\Debug\net8.0\UdemyCarBook.Application.dll
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\bin\Debug\net8.0\UdemyCarBook.Application.pdb
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\bin\Debug\net8.0\UdemyCarBook.Domain.dll
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\bin\Debug\net8.0\UdemyCarBook.Domain.pdb
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\UdemyCarBook.Application.csproj.AssemblyReference.cache
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\UdemyCarBook.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\UdemyCarBook.Application.AssemblyInfoInputs.cache
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\UdemyCarBook.Application.AssemblyInfo.cs
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\UdemyCarBook.Application.csproj.CoreCompileInputs.cache
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\UdemyCarBook.Application.csproj.CopyComplete
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\UdemyCarBook.Application.dll
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\refint\UdemyCarBook.Application.dll
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\UdemyCarBook.Application.pdb
+C:\Users\Nyekruh\source\repos\UdemyCarBook\Core\UdemyCarBook.Application\obj\Debug\net8.0\ref\UdemyCarBook.Application.dll

@@ -1,0 +1,47 @@
+﻿@model CreateReservationDto
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/UILayout/Index.cshtml";
+}
+
+<div class="col-md-8 block-9 mb-md-5 mt-5 mx-auto">
+
+    <form class="bg-light p-5 contact-form" method="post">
+        <h4 class="alert alert-success">Araç Rezervasyon Formu</h4>
+        <div class="form-group">
+            <input type="hidden" class="form-control" asp-for="CarId" value="@ViewBag.v3" placeholder="Almak İstediğiniz Araba">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" asp-for="Name" placeholder="Adınız">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" asp-for="Surname" placeholder="Soyadınız">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" asp-for="Email" placeholder="Mail Adresiniz">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" asp-for="Phone" placeholder="Telefon Numaranız">
+        </div>
+        <div class="form-group">
+            @Html.DropDownListFor(x => x.PickUpLocationId, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            @Html.DropDownListFor(x => x.DropOffLocationId, (List<SelectListItem>)ViewBag.v, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" asp-for="Age" placeholder="Yaşınız">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" asp-for="DriverLicenceYear" placeholder="Ehliyet Yılınız">
+        </div>
+        <div class="form-group">
+            <textarea asp-for="Description" cols="30" rows="7" class="form-control" placeholder="Varsa Eklemek İstedikleriniz"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Rezervasyon Tamamla" class="btn btn-primary py-3 px-5">
+        </div>
+    </form>
+
+</div>

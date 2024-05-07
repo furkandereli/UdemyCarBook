@@ -1,0 +1,69 @@
+﻿@model CreateCarDto
+@{
+    ViewData["Title"] = "CreateCar";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Yeni Araç Girişi</h4>
+                        <p class="card-subtitle mb-4">Araç ile ilgili temel bilgileri eksiksiz doldurmanız önemlidir. Veri girişlerinden sonra kaydet butonuna tıklayarak işlemi tamamlayabilirsiniz.</p>
+
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="exampleInputBrand">Marka</label>
+                                @* <select asp-for=BrandId class="form-control">
+                                    @foreach (var item in (List<SelectListItem>)ViewBag.BrandValues)
+                                    {
+                                        <option value="@item.Value">@item.Text</option>
+                                    }
+                                </select> *@
+                                @Html.DropDownListFor(x => x.BrandId, (List<SelectListItem>)ViewBag.BrandValues, new {@class = "form-control"})
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputModel">Model</label>
+                                <input type="text" class="form-control" id="exampleInputModel" asp-for="Model" placeholder="Model Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputCoverImage">Kapak Fotoğrafı</label>
+                                <input type="text" class="form-control" id="exampleInputCoverImage" asp-for="CoverImageUrl" placeholder="Kapak Fotoğraf Linkini Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputKm">Km</label>
+                                <input type="text" class="form-control" id="exampleInputKm" asp-for="Km" placeholder="Km Bilgisi Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputTransmission">Vites Türü</label>
+                                <input type="text" class="form-control" id="exampleInputTransmission" asp-for="Transmission" placeholder="Vites Türü Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputSeat">Koltuk Sayısı</label>
+                                <input type="number" class="form-control" id="exampleInputSeat" asp-for="Seat" min="0" placeholder="Koltuk Sayısı Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputLuggage">Bagaj Sayısı</label>
+                                <input type="number" class="form-control" id="exampleInputLuggage" asp-for="Luggage" min="0" placeholder="Bagaj Sayısı Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputFuel">Yakıt Türü</label>
+                                <input type="text" class="form-control" id="exampleInputFuel" asp-for="Fuel" placeholder="Yakıt Türü Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputBigImageUrl">Büyük Kapak Fotoğrafı</label>
+                                <input type="text" class="form-control" id="exampleInputBigImageUrl" asp-for="BigImageUrl" placeholder="Araç Detayında Gözükecek Kapak Fotoğrafı Linki Giriniz">
+                            </div>
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Araç Oluştur</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
